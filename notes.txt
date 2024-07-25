@@ -1,0 +1,14 @@
+Při zpracování tohoto úkolu jsem postupoval následovně: 
+
+Nejdříve jsem pomocí curl -O stáhl původní soubor s daty. Soubor jsem musel následně upravit tak aby byl správně čitelní v linuxu a nečetl prázdné znaky - toho jsem dosáhl pomocí využití příkazu tr a vytvořil si tak upravenou verzi původního souboru. 
+
+Pomocí příkazů head a cat jsem pravidelně kontroloval výstupy. 
+Poté přišlo vytvoření txt souboru se vzorky ze kterých jsem filtroval generátory s min. 50 vzorky pomocí awk, sort a uniq commandu. Tento nový soubor filtrpw.csv jsem následně využil jako odrazový můstek pro splnění úkolu. 
+
+Podle zadání jsem hledal minimální počet znaků alespoň 8, malá písmena, velká písmena, speciální znaky, číslice. Tyto filtrace jsem vytvořil pomocí commandu grep s pomínkou pro daný filtr (malá písmena, číslice atd.) a tee pro vytvoření již profiltrovaného souboru. a každý jsem tak následně zkoumal dále.
+
+Pro kontrolu unikátních trojic na začátku a na konci jsem použil přikaz awk. Jelikož se ale v daném zadání a profiltrování nenacházeli žádné stejné trojice ani v jednom případě musel jsem upravit pomocí cmd grep výstup abych měl následně z čeho počítat výsledky. 
+
+Po dokončení těchto filtrací jsem přešel ke generování jsonu.pomocí comandu touch jsem vytvořil soubor pro skript a pomocí chmod jsem jej převedl na funknčí script. Dále jsem v prostředí vim sepsal jednoduchý skritp !#/bin/bash pro vzhodnocení filtrů a uložení do jsonu. 
+
+Ve finále jsem spustil instalaci Git abych mohl výsledek nahrát na úložiště pro odevzdání. 

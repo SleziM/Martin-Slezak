@@ -1,0 +1,98 @@
+ curl -O https://raw.githubusercontent.com/ENGETO-Academy/Linux-public/main/files/pwlist.csv
+  225  ls
+  226  ls -l pwlist.csv
+  227  head -n 10 pwlist.csv
+  228  tr -d '\r' < pwlist.csv > pwlist_linux.csv
+  229  ls -l
+  230  head -n 10 pwlist_linux.csv
+  231  file pwlist_linux.csv
+  232  awk -F, '{print $1}' pwlist_linux.csv | sort | uniq -c | tee vzorky.txt
+  233  cat vzorky.txt
+  234  ls
+  235  awk "$1 >= 50 {print $2}' vzorky.txt | tee platnevzorky.txt
+  236  lsls
+  237  ls
+  238  awk '$1 >= 50 {print $2}' vzorky.txt | tee platnevzorky.txt
+  239  ls
+  240  grep -f platnevzorky.txt pwlist_linux.csv | tee filtrpw.csv
+  241  head -n 10 filtrpw.csv
+  242  awk -F 'length($2) >= 8' filtrpw.csv | tee mindelka.csv
+  243  awk -F, 'length($2) >= 8' filtrpw.csv | tee mindelka.csv
+  244  head -n 10 mindelka.csv
+  245  grep -E ',.*[a-z]' mindelka.csv | tee malap.csv
+  246  head -n 10 malap.csv
+  247  ls
+  248  grep *E ',.*[A-Z]' malap.csv | tee velkap.csv
+  249  grep -E ',.*[A-Z]' malap.csv | tee velkap.csv
+  250  head -n 10 velkap.csv
+  251  grep -E ',.*[0-9]' velkap.csv | tee cislo.csv
+  252  head -n 10 cislo.csv
+  253  grep -E ',.*[^a-zA-Z0-9]' cislo.csv | tee specialni.csv
+  254  head -n 10 specialni.csv
+  255  awk -F, '{print substr ($2, 1, 3)}' specialni.csv | sort | uniq -c | awk '$1 > 1 {print $2}' | tee unikatnizacatek.txt
+  256  cat unikatnizacatek.txt
+  257  ls
+  258  grep -v -F -f unikatnizacatek.txt specialni.csv | tee unizacatek.csv
+  259  ls
+  260  head -n 10 unizacatek.csv
+  261  awk -F, '{print substr($2, length($2)-2, 3)}' unizacatek.csv | sort | uniq -c | awk '$1 > 1 {print $2}' | tee unikatnikonec.csv
+  262  cat unikatnikonec.csv
+  263  ls
+  264  rm unikatnikonec.csv
+  265  awk -F, '{print substr($2, length($2)-2, 3)}' unizacatek.csv | sort | uniq -c | awk '$1 > 1 {print $2}' | tee unikatnikonec.txt
+  266  cat unikatnikonec.txt
+  267  ls
+  268  grep -v -F -f unikatnikonec.txt unizacatek.csv | tee unikonec.csv
+  269  ls
+  270  awk -F, {print $1}' filtrpw.csv | sort | uniq -c | tee finalnipocet.csv
+  271  awk -F, '{print $1}' filtrpw.csv | sort | uniq -c | tee finalnipocet.csv
+  272  cat finalnipocet.csv
+  273  touch script.sh
+  274  ls
+  275  chmod +x script.sh
+  276  ls
+  277  vim script.sh
+  278  rm script.sh
+  279  touch script.sh
+  280  chmod +x script.sh
+  281  vim script.sh
+  282  ./script.sh
+  283  ls
+  284  cat report.json
+  285  mkdir projekt
+  286  ls
+  287  mv cislo.csv filtrpw.csv finalnipocet.csv malap.csv mindelka.csv platnevzorky.txt pwlist.csv pwlist_linux.csv report.json script.sh specialni.csv unikatnikonec.txt unikatnizacatek.txt unikonec.csv unizacatek.csv vzorky.txt projekt/
+  288  ls
+  289  cd projekt
+  290  ls
+  291  cd /home/student/projekt
+  292  cd home/student
+  293  -
+  294  git init
+  295  git add
+  296  cd-
+  297  cd -
+  298  cd
+  299  gitinit
+  300  git.config --global user.name "Slezi.M"
+  301  git init -b main
+  302  sudo yum install git
+  303  ls
+  304  cd /home/student/projekt
+  305  git init
+  306  git add .
+  307  git commit -m "Initial commit with project files"
+  308  git config --global user.email "martec1203@gmail.com"
+  309  git config --global user.name "SleziM"
+  310  git commit -m "Initial commit with project files"
+  311  git remote add origin https://github.com/SleziM/Martin-Slezak.git
+  312  git push -u origin master
+  313  git branch -M main
+  314  git push -u origin main
+  315  git remote add origin git@github.com:SleziM/Martin-Slezak.git
+  316  git push -u origin main
+  317  git remote add origin https://github.com/SleziM/projekt1.git
+  318  git push -u origin master
+  319  git push origin main
+  320  cd
+  321  history
