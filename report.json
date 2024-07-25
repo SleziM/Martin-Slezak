@@ -1,0 +1,53 @@
+{
+  "name": "Martin Slezak",
+  "date": "25-07-2024/04:01",
+  "data": [
+{
+    "type": "Cairo",
+    "total_count": 99,
+    "min_length": 66,
+    "min_lower": 66,
+    "min_upper": 66,
+    "min_digit": 52,
+    "min_special": 34,
+    "valid_prefix": 34,
+    "valid_suffix": 34,
+    "score": 0
+  },
+{
+    "type": "HernsPW",
+    "total_count": 91,
+    "min_length": 79,
+    "min_lower": 79,
+    "min_upper": 79,
+    "min_digit": 73,
+    "min_special": 55,
+    "valid_prefix": 55,
+    "valid_suffix": 55,
+    "score": 0
+  },
+{
+    "type": "Orion1.15",
+    "total_count": 85,
+    "min_length": 85,
+    "min_lower": 85,
+    "min_upper": 84,
+    "min_digit": 72,
+    "min_special": 0,
+    "valid_prefix": 0,
+    "valid_suffix": 0,
+    "score": 2
+  },
+{
+    "type": "PWmk",
+    "total_count": 74,
+    "min_length": 46,
+    "min_lower": 46,
+    "min_upper": 46,
+    "min_digit": 0,
+    "min_special": 0,
+    "valid_prefix": 0,
+    "valid_suffix": 0,
+    "score": 0
+  }
+]}
